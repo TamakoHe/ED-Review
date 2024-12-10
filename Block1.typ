@@ -1,4 +1,5 @@
 #set text(size: 15pt)
+#import "@preview/whalogen:0.2.0": ce
 = Crystal Properties and Growth of Semiconductors
 == electrical conductivities(电导率)
 电导率($sigma$)与电阻率($rho$) conductivity resistivity
@@ -39,3 +40,37 @@ $ "APF"="晶胞体积"/"原始体积" $
 - 简单立方:一个晶胞一个原子$"APF"=(4/3 pi (0.5a)^3)/a^3 approx 0.524$
 - 体心立方:一个晶胞两个原子,体对角线接触:$"APF"=((4pi)/3 dot 2 dot (sqrt(3)/4 a)^3)/a^3 approx 0.680 $
 - 面心立方:一个晶胞四个原子,面对角线接触:$"APF"=(4 dot (4pi)/3 (sqrt(2)/4 a)^3)/a^3 approx 0.740$
+== 晶体硅制造的化学过程
+=== 粗硅
+$ #ce("SiO2 + 2C->Si + 2CO") $
+在$1800$摄氏度以上的高温中制作,得到冶金级的硅(metallurgical grade Si)
+=== 半导体级的硅(EGS)
+$ #ce("Si + 3HCl -> SiHCl3 + H2") $
+$ #ce("2SiHCl3 + 2H2->2Si + 6HCl") $
+经过这一步,可以得到那个高纯的多晶硅, 然后要把多晶硅转换为单晶硅.
+一般通过Czochralski method.
+#figure(caption: "Czochralski method")[#image("2024-12-09-14-22-33.png")]
+= 原子物理
+== 光电效应(The Photoelectric Effect)
+- 光子的能量$E=h v$,$v$是频率,$h$是普朗克常数
+#figure(caption: [被激发出来的光电子最大动能和光的频率的关系])[#image("2024-12-09-14-30-33.png")]
+== 原子结构(波尔模型/shell model)
+- 电子在分立的半径固定的轨道上运行
+- 点阵通过释放(emission)和释放(absorbing)能量来在轨道上跳跃
+- proton(质子);neutron(中子)
+#figure(caption: [Shell model])[#image("2024-12-09-14-34-13.png")]
+== 量子数
+- principal number: $n=1,2,3...$ 越大,距离原子核越远
+- 角量子数($l$):orbital angular momentum quantum number(轨道的角动量量子数): 决定轨道的形状,取0到n-1
+- 磁量子数($m_l$):Magnetic quantum number 描述电子角动量在$ZZ$轴投影的量子数(当原子受外磁场作用时，原子光谱中谱线会由原来一条分为多条，称为能级分裂[1]。这是由于电子的磁量子数决定的电子磁矩空间取向的不同造成的.),取值$-l$到$l$
+- 自旋量子数($m_s$):描述电子自旋方向,只能取$plus.minus 1/2$
+每一个角量子数对应一个亚层(subshell), 可以装下$2(2l+1)$个电子,用spdf表示
+一个由固定主量子数决定的shell可以装下$2n^2$个电子.
+#figure(caption: "能级顺序")[#image("2024-12-09-14-52-53.png")]
+= Energy Bands and Charge Carriers in Semiconductors
+== 离子键(ionic bonding)
+可以认为一个原子把一个或者多个电子完全给另外一种电子
+== 共价键(covalent bond)
+依靠公用电子对
+== 能带(Energy Band)
+
