@@ -73,4 +73,27 @@ $ #ce("2SiHCl3 + 2H2->2Si + 6HCl") $
 == 共价键(covalent bond)
 依靠公用电子对
 == 能带(Energy Band)
-
+波尔理论中原子的能级就是能带.\
+原子间的相互作用会使得能带分裂.
+#figure(caption: [能带分裂])[#image("2024-12-10-09-00-10.png")]
+When atoms combine to form substances, the outermost shells, subshells and orbitals
+merge, providing a greater number of available energy levels for electrons to assume.
+\ --- 大概就是说的是杂化轨道吧
+扩展一下, 如果是大量原子相互作用, 能带就可以看作是连续的能带了\
+Equilibrium interatomic spacing--原子平衡间距, 对应键能最小的时候\
+能带的分类:
++ Valence band 最外层的被电子占满的带(价带)
++ 下一个带可能是空的, 或者被电子部分填充, 叫做conduction band(导带)
+#figure(caption: [更准确的解释])[#image("2024-12-10-09-16-19.png")]
+#figure(caption: [可能是重叠的])[#image("2024-12-10-09-17-04.png")]
+别把所谓能带和1s 2s 2p之类的对应, 是有一些区别的. Valence band, conduction 
+band都是价电子才有的.\
+#figure(caption: [导体,半导体,绝缘体的区别在于能带的间隙])[#image("2024-12-10-09-21-28.png")]
+价电子从Valence到conduction变成自由电子就能实现导电, 这两个能带之间的能量差
+就是Forbidden Energy Gap$E_g$, 没有电子的能量会在这个禁带之中!
+== 直接和间接能带间隙
+#figure(caption: "直接和间接能带")[#image("2024-12-10-09-30-17.png")]
+简单来说, 就是导带的最低和价带的最高是不是在相同的晶体动量(一个复杂的东西).
+== 化合物半导体
+除了用Ⅳ族元素之外, 可以用Ⅲ+Ⅴ或者Ⅱ加Ⅵ(总之平均下来是4)来组成半导体,
+化合物半导体的doping可以采用微调其中一种元素的方法,不用再加入其他元素
