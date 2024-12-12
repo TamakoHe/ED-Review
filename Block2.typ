@@ -77,5 +77,19 @@ $ D_p=mu_p (k T)/q $
 要涉及到之前的density of states, probability
 of a state being occupied, 对于n型, 在导带上积分, 对于p型, 在
 价带积分.
-$ n_n=integral_(E_c)^(E_c+chi) g_"cb"(E)f(E) d E $
- 
+$ n_n=integral_(E_c)^(E_c+chi) g_"cb"(E) f(E) d E $
+== 用能带理论解释PN结的性质
+#figure(caption: "能带理论")[#image("2024-12-12-09-50-01.png")]
+由于n型的费米能级更加靠近导带, 可以认为n区能量高, 在n区导带中的电子会流向p区的导带,流过来的电子由于能量下降，很快与价带上的空穴复合，同时P区能带上移，N区能带下降，当两者的费米能级达到同一水平时，N区和P区之间形成势垒，势垒区内存在内建电场，N区电子由于能量不足以跨过势垒，停止移动。
+
+在反向偏置的情况下, 结的厚度变大, 但是有少子还在移动, 产生了几乎为常数的
+反向饱和电流.
+== Thermal generation
+只要温度大于0k, 就一定有价电子被激发到导带, 留下空穴在价带, 产生了电子-空穴对.
+== 击穿(Reverse breakdown)
+击穿有两种
+#figure(caption: "完整的i-v图")[#image("2024-12-12-10-06-30.png")]
+- Avalanche(雪崩)
+由于在耗尽区的电场特别大, 导致Drift电子得到足够的动能让硅原子离子化, 破坏Si-Si共价键, 是一种轰击(bombardment)的过程, 这种离子化又叫做:impact ionization(冲击离子化)
+#image("2024-12-12-10-27-51.png")
+- Zener(齐纳)
