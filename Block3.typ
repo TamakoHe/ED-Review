@@ -26,7 +26,7 @@ BJT可以视为由两个共有一个区域的PN结构成, 两边分别是Emiiter
 === 关于电流增益(以npn为例子)
 $ I_C=beta I_B $
 $ I_E=I_B+I_C $
-$ I_C/I_E=alpha=beta/(beta+1) $
+$ I_C/I_E=alpha=beta/(beta+1) "base transport factor" $
 #figure(caption: [用物理公式计算])[#image("2024-12-13-15-08-01.png")]
 == BJT的耗能
 $ P=V_"BE"I_B+V_"CE"I_C $
@@ -40,7 +40,7 @@ $ I_C=beta I_B (1+V_"CE"/V_A) $
 - 增加基极的参杂浓度(concentration)
 - 减少集电极参杂浓度
 这种效应又叫做:Early effect(Early是人名)
-== BJT的效率(efficiency)
+== BJT的发射效率(emiiter efficiency)
 $ gamma=(I_E-I_B)/I_E=I_C/(I_C+I_B) $
 = JFET(Junction field transistor,场效应晶体管)
 #figure(caption: [JFET也有三个极(漏级,源极还有栅极)])[#image("2024-12-13-19-27-54.png")]
@@ -96,7 +96,7 @@ $I_D=v_"DS"/R_n$
 $ I_D=k^' (V_"GS"-V_"th")V_"DS"-1/2 k^' V_"DS"^2 $
 #figure(caption: [$k^'=1/2 k$. Z是MOSFET的宽度,L是沟道长度,$mu_e$是电子迁移率,$epsilon/t_"ox"$是氧化层电容])[#image("2024-12-14-10-09-14.png")]
 === 饱和区
-$ I_D=1/2 k^' (V_"GS"-V_"th")(1+lambda V_"DS") $
+$ I_D=1/2 k^' (V_"GS"-V_"th")^2(1+lambda V_"DS") $
 == PMOS
 - 线性区:$V_"SG">|V_"th"|,V_"SD"<V_"SG"-|V_"th"|$,$I_D=k^' [(V_"SG"-|V_"th"|V_"SD")-1/2 V_"SD"^2]$
 - 饱和区:$I_D=1/2 k^' (V_"SG"-|V_"th"|)^2$
@@ -317,3 +317,6 @@ Higher voltage amplification can be achieved by increasing transconductance (lar
 - (c) About ±0.4 V input swing for symmetrical undistorted output swing given the determined Q-point and gain.
 - (d) Higher gain is achieved by increasing \(g_m\), increasing \(R_D\) or using active loads, increasing \(V_{DD}\), and reducing \(\lambda.\)
 ```
+为什么基极很窄?
+- 避免载流子被复合, 提高从发射极到集电极的传输效率, 增大电流增益
+- 

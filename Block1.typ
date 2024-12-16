@@ -169,3 +169,9 @@ $mu_e$是电子移动能力
 == PN结的带图(Band Diagram)
 == Appendix
 #image("2024-12-14-16-25-47.png")
+=== Long range order
+In the context of materials science, long-range order refers to the regular, repeating arrangement of atoms or molecules that extends over a significant distance in a material. This is a characteristic of crystalline solids, where the atoms occupy specific positions within a repeating lattice structure.
+=== Bravais Lattice(点阵)
+A Bravais lattice is the simplest repeating unit that fills all space when repeated by translation operations. There are 14 unique Bravais lattices in three dimensions, each distinguished by the arrangement of lattice points within the unit cell.
+=== Valence electrons
+Valence electrons are the outermost electrons of an atom that participate in chemical bonding.
