@@ -108,3 +108,5 @@
 - Double-Heterostructure
 - Monocrystalline
 - Polycrystalline
+= 硅的$E_g approx 1.1 "eV"$
+= 半导体的电导率公式没有在sheet里?
