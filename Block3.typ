@@ -93,7 +93,7 @@ $I_D=v_"DS"/R_n$
 #figure(caption: [饱和区电流主要由$V_"GS"$决定])[#image("2024-12-14-09-57-54.png")]
 == 传输公式
 === 线性区($V_"GS">V_"th"$,$V_"DS"<V_"GS"-V_t$)
-$ I_D=k^' (V_"GS"-V_"th")V_"DS"-1/2 k^' V_"DS"^2 $
+$ I_D=(k^' (V_"GS"-V_"th")V_"DS"-1/2 k^' V_"DS"^2)(1+ lambda V_"ds") $
 #figure(caption: [$k^'=1/2 k$. Z是MOSFET的宽度,L是沟道长度,$mu_e$是电子迁移率,$epsilon/t_"ox"$是氧化层电容])[#image("2024-12-14-10-09-14.png")]
 === 饱和区
 $ I_D=1/2 k^' (V_"GS"-V_"th")^2(1+lambda V_"DS") $
